@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+:root {
+  font-size: 62.5%;
+  --ff-body: 'Hanken Grotesk', sans-serif;
+  --white: hsl(0, 0%, 100%);
+  --light: hsl(241, 100%, 89%);
+  --dark: hsl(224, 30%, 27%);
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.card {
+  /*  */
+  margin-bottom: 2rem;
+}
+
+.card__resume {
+  background-image: linear-gradient(to right bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  min-height: 45vh;
+  border-radius: 0 0 2rem 2rem;
+  text-align: center;
+  padding: 2rem 4rem;
+  color: var(--light);
+}
+
+
+.card__resume .result {
+  width: 10rem;
+  height: 10rem;
+  margin: 1.5rem auto;
+  color: var(--white);
+  font-size: 5rem;
+  font-weight: 800;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  border-radius: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  background-image: linear-gradient(to left bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.card__resume .result span {
+  font-size: 1.4rem;
+  margin-top: -2rem;
+  color: var(--light);
+}
+
+.card__resume h2 {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.card__resume p {
+  color: var(--light);
+  font-size: 1.4rem;
+  max-width: 32rem;
+  margin: 2rem auto 0;
+}
+
+.card__list {
+  padding: 2rem;
+}
+
+.card__list h3 {
+  color: var(--dark);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.card__list ul {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.card__list ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+}
+
+.card__list ul li:nth-child(1) {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.card__list ul li:nth-child(2) {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.1);
+
+}
+
+.card__list ul li:nth-child(3) {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.card__list ul li:nth-child(4) {
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(234, 85%, 45%, 0.1);
+
+}
+
+.card__list ul li .details {
+  display: flex;
+  gap: 1rem;
+}
+
+.card__list ul li .score {
+  color: var(--dark-gray-blue);
+}
+
+.card__list ul li .score span {
+  color: var(--light);
+}
+
+
+.btn {
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem 2rem;
+  border-radius: 1.5rem;
+  background-color: var(--dark);
+
+  width: 100%;
+  color: var(--light);
+  font-weight: 700;
+  transition: transition: all .2s ease-in;
+  ;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to right bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%, );
+}
+
+
+@media (min-width: 561px) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 560px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    border-radius: 2rem;
+  }
+
+  .card__resume {
+    border-radius: 2rem;
+  }
+
+}
